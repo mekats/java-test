@@ -6,5 +6,11 @@
     ":disableMajorUpdates",
     ":automergePatch",
     "group:recommended"
-  ]
+  ],
+  "major": {
+    "dependencyDashboardApproval": true,
+    "addLabels": [
+      "major-upgrade"
+    ]
+  }
 }
