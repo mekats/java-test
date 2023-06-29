@@ -3,6 +3,11 @@
   "extends": [
     "config:base"
   ],
+  "fileMatch": [
+    "(^|/)gradle/wrapper/gradle-wrapper\\.properties$",
+    "(^|/)gradle/wrapper/gradle-wrapper\\.jar$"
+  ],
+  "versioning": "gradle",
   "lockFileMaintenance": {
     "automerge": true
   },
