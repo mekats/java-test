@@ -5,12 +5,12 @@
     ":enableVulnerabilityAlertsWithLabel('security')",
     ":disableMajorUpdates",
     ":automergePatch",
+    ":automergeMinor",
     "helpers:pinGitHubActionDigests",
     "group:recommended"
   ],
   "enabledManagers": [
     "gradle",
-    "github-actions",
     "gradle-wrapper"
   ],
   "gradle-wrapper": {
