@@ -5,12 +5,20 @@
     ":enableVulnerabilityAlertsWithLabel('security')",
     ":disableMajorUpdates",
     ":automergePatch",
+    "helpers:pinGitHubActionDigests",
     "group:recommended"
   ],
-  "major": {
-    "dependencyDashboardApproval": true,
-    "addLabels": [
-      "major-upgrade"
-    ]
+  "enabledManagers": [
+    "gradle",
+    "github-actions",
+    "gradle-wrapper"
+  ],
+  "gradle-wrapper": {
+    "fileMatch": [
+      "(^|/)gradle/wrapper/gradle-wrapper\\.properties$",
+      "(^|/)gradle/wrapper/gradle-wrapper\\.jar$",
+      "gradlew$"
+    ],
+    "versioning": "gradle"
   }
 }
