@@ -14,7 +14,6 @@
       "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
-      "minimumReleaseAge": "2 days",
       "internalChecksFilter": "strict",
       "prCreation": "status-success",
     }
@@ -26,5 +25,9 @@
       "gradlew$"
     ],
     "versioning": "gradle"
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["vulns"]
   }
 }
