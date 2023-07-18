@@ -18,7 +18,7 @@
       "internalChecksFilter": "strict",
       "prCreation": "status-success",
     }
-  ]
+  ],
   "enabledManagers": [
     "gradle",
     "gradle-wrapper"
