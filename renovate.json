@@ -19,10 +19,6 @@
       "prCreation": "status-success",
     }
   ],
-  "enabledManagers": [
-    "gradle",
-    "gradle-wrapper"
-  ],
   "gradle-wrapper": {
     "fileMatch": [
       "(^|/)gradle/wrapper/gradle-wrapper\\.properties$",
