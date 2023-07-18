@@ -1,4 +1,6 @@
 plugins {
+    id("java")
+    id("org.openrewrite.rewrite") version("6.1.16")
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("io.micronaut.application") version "3.7.10"
     id("io.micronaut.test-resources") version "3.7.10"
@@ -16,8 +18,15 @@ dependencyLocking {
 }
 
 dependencies {
+    // OpenReWrite
+    rewrite(platform("org.openrewrite.recipe:rewrite-recipe-bom:2.0.7"))
+    rewrite "org.glassfish.jaxb:jaxb-runtime:2.3.8"
+    rewrite("org.openrewrite.recipe:rewrite-migrate-java")
+
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    compileOnly "com.sun.xml.ws:jaxws-rt:2.3.6"
+    compileOnly "org.glassfish.jaxb:jaxb-runtime:2.3.8"
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.kafka:micronaut-kafka")
     implementation("io.micronaut.kafka:micronaut-kafka-streams")
@@ -26,14 +35,21 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
+
+    testImplementation "com.sun.xml.ws:jaxws-rt:2.3.6"
+    testImplementation "org.glassfish.jaxb:jaxb-runtime:2.3.8"
 }
 
 application {
     mainClass.set("example.micronaut.Application")
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("11")
-    targetCompatibility = JavaVersion.toVersion("11")
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
+}
+
+rewrite {
+    activeRecipe("org.openrewrite.java.migrate.UpgradeToJava17")
 }
 
 graalvmNative.toolchainDetection = false
