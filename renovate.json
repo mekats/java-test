@@ -9,6 +9,16 @@
     "helpers:pinGitHubActionDigests",
     "group:recommended"
   ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "minimumReleaseAge": "2 days",
+      "internalChecksFilter": "strict",
+      "prCreation": "status-success",
+    }
+  ]
   "enabledManagers": [
     "gradle",
     "gradle-wrapper"
