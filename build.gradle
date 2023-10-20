@@ -25,7 +25,7 @@ dependencies {
 
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-    compileOnly "com.sun.xml.ws:jaxws-rt:2.3.6"
+    compileOnly "com.sun.xml.ws:jaxws-rt:2.3.7"
     compileOnly "org.glassfish.jaxb:jaxb-runtime:2.3.8"
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.kafka:micronaut-kafka")
@@ -36,7 +36,7 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
 
-    testImplementation "com.sun.xml.ws:jaxws-rt:2.3.6"
+    testImplementation "com.sun.xml.ws:jaxws-rt:2.3.7"
     testImplementation "org.glassfish.jaxb:jaxb-runtime:2.3.8"
 }
 
