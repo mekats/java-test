@@ -18,26 +18,26 @@ dependencyLocking {
 }
 
 dependencies {
-    annotationProcessor("io.micronaut:micronaut-http-validation")
-    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-    compileOnly "com.sun.xml.ws:jaxws-rt:4.0.2"
-    compileOnly "org.glassfish.jaxb:jaxb-runtime:4.0.4"
-    implementation("io.micronaut:micronaut-http-client")
-    implementation("io.micronaut.kafka:micronaut-kafka")
-    implementation("io.micronaut.kafka:micronaut-kafka-streams")
-    implementation("io.micronaut.reactor:micronaut-reactor")
-    implementation("io.micronaut.reactor:micronaut-reactor-http-client")
-    implementation("io.micronaut.serde:micronaut-serde-jackson")
-    runtimeOnly("ch.qos.logback:logback-classic")
+    annotationProcessor("io.micronaut:micronaut-http-validation:4.2.1")
+    annotationProcessor("io.micronaut.serde:micronaut-serde-processor:2.4.0")
+    implementation("com.sun.xml.ws:jaxws-rt:4.0.2")
+    implementation("org.glassfish.jaxb:jaxb-runtime:3.0.2")
+    implementation("io.micronaut:micronaut-http-client:3.9.3")
+    implementation("io.micronaut.kafka:micronaut-kafka:4.5.4")
+    implementation("io.micronaut.kafka:micronaut-kafka-streams:4.5.4")
+    implementation("io.micronaut.reactor:micronaut-reactor:2.6.0")
+    implementation("io.micronaut.reactor:micronaut-reactor-http-client:2.6.0")
+    implementation("io.micronaut.serde:micronaut-serde-jackson:1.5.3")
+    runtimeOnly("ch.qos.logback:logback-classic:1.2.11")
 
-    runtimeOnly "org.yaml:snakeyaml"
+    runtimeOnly "org.yaml:snakeyaml:2.0"
 
     testImplementation "com.sun.xml.ws:jaxws-rt:4.0.2"
-    testImplementation "org.glassfish.jaxb:jaxb-runtime:4.0.4"
+    testImplementation "org.glassfish.jaxb:jaxb-runtime:3.0.2"
 
     // OpenReWrite
     rewrite(platform("org.openrewrite.recipe:rewrite-recipe-bom:2.5.3"))
-    rewrite "org.glassfish.jaxb:jaxb-runtime:4.0.4"
+    rewrite "org.glassfish.jaxb:jaxb-runtime:3.0.2"
     rewrite("org.openrewrite.recipe:rewrite-micronaut:2.1.8")
 }
 
