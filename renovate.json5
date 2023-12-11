@@ -35,6 +35,18 @@
       ],
     },
     {
+      groupName: 'Micronaut dependencies',
+      groupSlug: 'micronaut-deps',
+      matchUpdateTypes: [
+        'minor',
+        'patch'
+      ],
+      'matchPackagePrefixes': [
+        'io.micronaut:',
+        'io.micronaut.'
+      ]
+    },
+    {
       matchUpdateTypes: [
         'major',
       ],
@@ -76,6 +88,7 @@
       ],
       matchStrings: [
         '# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Za-z0-9_]+?_VERSION\\s*:\\s*["\']?(?<currentValue>.+?)["\']?\\s',
+
       ],
     },
   ],
