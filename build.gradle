@@ -20,13 +20,13 @@ dependencyLocking {
 dependencies {
     // OpenReWrite
     rewrite(platform("org.openrewrite.recipe:rewrite-recipe-bom:2.5.3"))
-    rewrite "org.glassfish.jaxb:jaxb-runtime:2.3.9"
+    rewrite "org.glassfish.jaxb:jaxb-runtime:3.0.2"
     rewrite("org.openrewrite.recipe:rewrite-migrate-java")
 
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     compileOnly "com.sun.xml.ws:jaxws-rt:2.3.7"
-    compileOnly "org.glassfish.jaxb:jaxb-runtime:2.3.9"
+    compileOnly "org.glassfish.jaxb:jaxb-runtime:3.0.2"
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.kafka:micronaut-kafka")
     implementation("io.micronaut.kafka:micronaut-kafka-streams")
@@ -37,7 +37,7 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
 
     testImplementation "com.sun.xml.ws:jaxws-rt:2.3.7"
-    testImplementation "org.glassfish.jaxb:jaxb-runtime:2.3.9"
+    testImplementation "org.glassfish.jaxb:jaxb-runtime:3.0.2"
 }
 
 application {
