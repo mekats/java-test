@@ -14,8 +14,15 @@
   timezone: 'Europe/London',
   packageRules: [
     {
+      "description": "Renovate Automerge",
       "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "minor"],
       "automerge": true
+    },
+    {
+      "description": "Renovation of Github Actions",
+      "matchManagers": ["github-actions"],
+      "semanticCommitType": "build",
+      "addLabels": ["github-actions"],
     },
     {
       matchUpdateTypes: [
