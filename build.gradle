@@ -20,8 +20,6 @@ dependencyLocking {
 dependencies {
     annotationProcessor('io.micronaut:micronaut-http-validation:4.2.1')
     annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.4.0')
-    implementation('com.sun.xml.ws:jaxws-rt:4.0.2')
-    implementation('org.glassfish.jaxb:jaxb-runtime:3.0.2')
     implementation('io.micronaut:micronaut-http-client:3.9.7')
     implementation('io.micronaut.kafka:micronaut-kafka:4.5.4')
     implementation('io.micronaut.kafka:micronaut-kafka-streams:4.5.4')
@@ -32,12 +30,11 @@ dependencies {
 
     runtimeOnly 'org.yaml:snakeyaml:2.0'
 
-    testImplementation 'com.sun.xml.ws:jaxws-rt:4.0.2'
-    testImplementation 'org.glassfish.jaxb:jaxb-runtime:3.0.2'
+    testImplementation('com.sun.xml.ws:jaxws-rt:4.0.2')
+    testImplementation('org.glassfish.jaxb:jaxb-runtime:3.0.2')
 
     // OpenReWrite
     rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.5.3'))
-    rewrite('org.glassfish.jaxb:jaxb-runtime:3.0.2')
     rewrite('org.openrewrite.recipe:rewrite-micronaut:2.1.8')
 }
 
