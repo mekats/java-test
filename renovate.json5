@@ -1,0 +1,65 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:best-practices',
+    ':automergePr',
+    ':automergeRequireAllStatusChecks',
+    ':semanticCommits',
+  ],
+  dependencyDashboard: true,
+  platformAutomerge: true,
+  prConcurrentLimit: 5,
+  separateMinorPatch: true,
+  separateMultipleMajor: true,
+  timezone: 'Europe/London',
+  packageRules: [
+    {
+      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "minor"],
+      "automerge": true
+    },
+    {
+      matchUpdateTypes: [
+        'major',
+      ],
+      labels: [
+        'major',
+      ],
+    },
+    {
+      matchUpdateTypes: [
+        'minor',
+      ],
+      labels: [
+        'minor',
+      ],
+    },
+    {
+      matchUpdateTypes: [
+        'patch',
+      ],
+      labels: [
+        'patch',
+      ],
+    },
+    {
+      matchUpdateTypes: [
+        'digest',
+      ],
+      labels: [
+        'digest'
+      ]
+    }
+  ],
+  "regexManagers": [
+    {
+      "description": "Renovation of _VERSION in Github workflows",
+      "customType": "regex",
+      "fileMatch": [
+        "^.github/(?:workflows|actions)/.+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Za-z0-9_]+?_VERSION\\s*:\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
+      ]
+    }
+  ]
+}
