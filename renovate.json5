@@ -14,15 +14,25 @@
   timezone: 'Europe/London',
   packageRules: [
     {
-      "description": "Renovate Automerge",
-      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "minor"],
-      "automerge": true
+      description: 'Renovate Automerge',
+      matchUpdateTypes: [
+        'patch',
+        'pin',
+        'pinDigest',
+        'digest',
+        'minor',
+      ],
+      automerge: true,
     },
     {
-      "description": "Renovation of Github Actions",
-      "matchManagers": ["github-actions"],
-      "semanticCommitType": "build",
-      "addLabels": ["github-actions"],
+      description: 'Renovation of Github Actions',
+      matchManagers: [
+        'github-actions',
+      ],
+      semanticCommitType: 'build',
+      addLabels: [
+        'github-actions',
+      ],
     },
     {
       matchUpdateTypes: [
@@ -53,20 +63,20 @@
         'digest',
       ],
       labels: [
-        'digest'
-      ]
-    }
-  ],
-  "regexManagers": [
-    {
-      "description": "Renovation of _VERSION in Github workflows",
-      "customType": "regex",
-      "fileMatch": [
-        "^.github/(?:workflows|actions)/.+\\.ya?ml$"
+        'digest',
       ],
-      "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Za-z0-9_]+?_VERSION\\s*:\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
-      ]
-    }
-  ]
+    },
+  ],
+  customManagers: [
+    {
+      description: 'Renovation of _VERSION in Github workflows',
+      customType: 'regex',
+      fileMatch: [
+        '^.github/(?:workflows|actions)/.+\\.ya?ml$',
+      ],
+      matchStrings: [
+        '# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Za-z0-9_]+?_VERSION\\s*:\\s*["\']?(?<currentValue>.+?)["\']?\\s',
+      ],
+    },
+  ],
 }
