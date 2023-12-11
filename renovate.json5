@@ -35,15 +35,23 @@
       ],
     },
     {
+      groupName: 'OpenRewrite dependencies',
+      groupSlug: 'openrewrite-deps',
+      'matchPackagePrefixes': [
+        'org.openrewrite.rewrite',
+        'org.openrewrite.recipe:'
+      ]
+    },
+    {
       groupName: 'Micronaut dependencies',
       groupSlug: 'micronaut-deps',
       matchUpdateTypes: [
         'minor',
         'patch'
       ],
-      'matchPackagePrefixes': [
-        'io.micronaut:',
-        'io.micronaut.'
+      'matchDepNames': [
+        'io.micronaut.test-resources',
+        'io.micronaut.application'
       ]
     },
     {
