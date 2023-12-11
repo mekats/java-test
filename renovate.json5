@@ -37,7 +37,7 @@
     {
       groupName: 'OpenRewrite dependencies',
       groupSlug: 'openrewrite-deps',
-      'matchPackagePrefixes': [
+      matchPackagePrefixes: [
         'org.openrewrite.rewrite',
         'org.openrewrite.recipe:'
       ]
@@ -45,13 +45,15 @@
     {
       groupName: 'Micronaut dependencies',
       groupSlug: 'micronaut-deps',
+      matchPackagePrefixes: [
+        'io.micronaut.kafka:',
+        'io.micronaut.reactor:',
+        'io.micronaut.serde:',
+        'io.micronaut:'
+      ],
       matchUpdateTypes: [
         'minor',
         'patch'
-      ],
-      'matchDepNames': [
-        'io.micronaut.test-resources',
-        'io.micronaut.application'
       ]
     },
     {
