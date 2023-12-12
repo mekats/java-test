@@ -21,7 +21,7 @@ dependencies {
     annotationProcessor('io.micronaut:micronaut-http-validation:4.2.1')
     annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.5.0')
     implementation('io.micronaut:micronaut-http-client:3.10.3')
-    implementation('io.micronaut.kafka:micronaut-kafka:4.5.4')
+    implementation('io.micronaut.kafka:micronaut-kafka:5.2.0')
     implementation('io.micronaut.kafka:micronaut-kafka-streams:4.5.4')
     implementation('io.micronaut.reactor:micronaut-reactor:2.6.0')
     implementation('io.micronaut.reactor:micronaut-reactor-http-client:2.6.0')
