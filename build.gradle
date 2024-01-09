@@ -34,7 +34,7 @@ dependencies {
     testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.4')
 
     // OpenReWrite
-    rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.5.4'))
+    rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.6.0'))
     rewrite('org.openrewrite.recipe:rewrite-micronaut:2.2.0')
 }
 
