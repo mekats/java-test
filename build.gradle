@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.openrewrite.rewrite' version '6.6.5'
+    id 'org.openrewrite.rewrite' version '6.6.6'
     id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'io.micronaut.application' version '4.2.1'
     id 'io.micronaut.test-resources' version '4.2.1'
@@ -34,7 +34,7 @@ dependencies {
     testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.4')
 
     // OpenReWrite
-    rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.6.0'))
+    rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.6.1'))
     rewrite('org.openrewrite.recipe:rewrite-micronaut:2.2.0')
 }
 
