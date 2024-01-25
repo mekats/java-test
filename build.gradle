@@ -35,8 +35,8 @@ dependencies {
     testImplementation('com.sun.xml.ws:jaxws-rt:4.0.2')
     testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.4')
     testImplementation("io.micronaut:micronaut-http-client:4.2.4")
-    testImplementation("org.testcontainers:junit-jupiter:1.19.3")
-    testImplementation("org.testcontainers:testcontainers:1.19.3")
+    testImplementation("org.testcontainers:junit-jupiter:1.19.4")
+    testImplementation("org.testcontainers:testcontainers:1.19.4")
     testImplementation("io.micronaut:micronaut-http-netty:4.2.4")
 
     // OpenReWrite
