@@ -18,9 +18,9 @@ dependencyLocking {
 }
 
 dependencies {
-    annotationProcessor('io.micronaut:micronaut-http-validation:4.3.6')
+    annotationProcessor('io.micronaut:micronaut-http-validation:4.3.7')
     annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.8.1')
-    implementation('io.micronaut:micronaut-http-client:4.3.6')
+    implementation('io.micronaut:micronaut-http-client:4.3.7')
     implementation('io.micronaut.kafka:micronaut-kafka:5.3.0')
     implementation('io.micronaut.kafka:micronaut-kafka-streams:5.3.0')
     implementation('io.micronaut.reactor:micronaut-reactor:3.2.1')
@@ -34,10 +34,10 @@ dependencies {
 
     testImplementation('com.sun.xml.ws:jaxws-rt:4.0.2')
     testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.4')
-    testImplementation("io.micronaut:micronaut-http-client:4.3.6")
+    testImplementation("io.micronaut:micronaut-http-client:4.3.7")
     testImplementation("org.testcontainers:junit-jupiter:1.19.5")
     testImplementation("org.testcontainers:testcontainers:1.19.5")
-    testImplementation("io.micronaut:micronaut-http-netty:4.3.6")
+    testImplementation("io.micronaut:micronaut-http-netty:4.3.7")
 
     // OpenReWrite
     rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.6.4'))
