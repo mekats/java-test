@@ -37,7 +37,7 @@ dependencies {
     testImplementation("io.micronaut:micronaut-http-client:4.3.8")
     testImplementation("org.testcontainers:junit-jupiter:1.19.6")
     testImplementation("org.testcontainers:testcontainers:1.19.6")
-    testImplementation("io.micronaut:micronaut-http-netty:4.3.8")
+    testImplementation("io.micronaut:micronaut-http-netty:4.3.9")
 
     // OpenReWrite
     rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.7.1'))
