@@ -33,7 +33,7 @@ dependencies {
     implementation('io.micronaut.testresources:micronaut-test-resources-testcontainers:2.4.0')
 
     testImplementation('com.sun.xml.ws:jaxws-rt:4.0.2')
-    testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.4')
+    testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.5')
     testImplementation("io.micronaut:micronaut-http-client:4.3.9")
     testImplementation("org.testcontainers:junit-jupiter:1.19.7")
     testImplementation("org.testcontainers:testcontainers:1.19.7")
