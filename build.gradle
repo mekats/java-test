@@ -40,7 +40,7 @@ dependencies {
     testImplementation("io.micronaut:micronaut-http-netty:4.3.11")
 
     // OpenReWrite
-    rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.8.0'))
+    rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.8.1'))
     rewrite('org.openrewrite.recipe:rewrite-micronaut:2.3.1')
 }
 
