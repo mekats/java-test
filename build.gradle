@@ -18,7 +18,7 @@ dependencyLocking {
 }
 
 dependencies {
-    annotationProcessor('io.micronaut:micronaut-http-validation:4.3.11')
+    annotationProcessor('io.micronaut:micronaut-http-validation:4.3.12')
     annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.8.2')
     implementation('io.micronaut:micronaut-http-client:4.3.11')
     implementation('io.micronaut.kafka:micronaut-kafka:5.3.0')
