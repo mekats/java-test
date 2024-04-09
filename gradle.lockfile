@@ -1,8 +1,8 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-ch.qos.logback:logback-classic:1.5.3=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
-ch.qos.logback:logback-core:1.5.3=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
+ch.qos.logback:logback-classic:1.5.4=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
+ch.qos.logback:logback-core:1.5.4=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
 com.amazonaws:aws-java-sdk-bom:1.12.477=testResourcesClasspath
 com.amazonaws:aws-java-sdk-bom:1.12.580=annotationProcessor,compileClasspath,developmentOnly,developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testAnnotationProcessor,testCompileClasspath,testResourcesService,testRuntimeClasspath
 com.azure:azure-sdk-bom:1.2.12=testResourcesClasspath
