@@ -22,7 +22,7 @@ dependencies {
     annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.10.0')
     implementation('io.micronaut:micronaut-http-client:4.5.0')
     implementation('io.micronaut.kafka:micronaut-kafka:5.5.0')
-    implementation('io.micronaut.kafka:micronaut-kafka-streams:5.4.0')
+    implementation('io.micronaut.kafka:micronaut-kafka-streams:5.5.0')
     implementation('io.micronaut.reactor:micronaut-reactor:3.3.0')
     implementation('io.micronaut.reactor:micronaut-reactor-http-client:3.3.0')
     implementation('io.micronaut.serde:micronaut-serde-jackson:2.10.0')
