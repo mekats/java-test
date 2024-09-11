@@ -41,7 +41,7 @@ dependencies {
 
     // OpenReWrite
     rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.19.0'))
-    rewrite('org.openrewrite.recipe:rewrite-micronaut:2.8.3')
+    rewrite('org.openrewrite.recipe:rewrite-micronaut:2.8.4')
 }
 
 application {
