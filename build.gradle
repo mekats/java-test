@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.openrewrite.rewrite' version '6.24.0'
+    id 'org.openrewrite.rewrite' version '6.25.0'
     id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'io.micronaut.application' version '4.4.3'
     id 'io.micronaut.test-resources' version '4.4.3'
@@ -41,7 +41,7 @@ dependencies {
 
     // OpenReWrite
     rewrite(platform('org.openrewrite.recipe:rewrite-recipe-bom:2.20.0'))
-    rewrite('org.openrewrite.recipe:rewrite-micronaut:2.9.0')
+    rewrite('org.openrewrite.recipe:rewrite-micronaut:2.10.0')
 }
 
 application {
