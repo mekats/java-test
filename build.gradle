@@ -19,13 +19,13 @@ dependencyLocking {
 
 dependencies {
     annotationProcessor('io.micronaut:micronaut-http-validation:4.7.0')
-    annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.11.0')
+    annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.12.0')
     implementation('io.micronaut:micronaut-http-client:4.7.0')
     implementation('io.micronaut.kafka:micronaut-kafka:5.7.0')
     implementation('io.micronaut.kafka:micronaut-kafka-streams:5.7.0')
     implementation('io.micronaut.reactor:micronaut-reactor:3.6.0')
     implementation('io.micronaut.reactor:micronaut-reactor-http-client:3.6.0')
-    implementation('io.micronaut.serde:micronaut-serde-jackson:2.11.0')
+    implementation('io.micronaut.serde:micronaut-serde-jackson:2.12.0')
     runtimeOnly('ch.qos.logback:logback-classic:1.5.12')
 
     runtimeOnly('org.yaml:snakeyaml:2.3')
