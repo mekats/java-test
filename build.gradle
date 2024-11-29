@@ -19,7 +19,7 @@ dependencyLocking {
 
 dependencies {
     annotationProcessor('io.micronaut:micronaut-http-validation:4.7.0')
-    annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.12.0')
+    annotationProcessor('io.micronaut.serde:micronaut-serde-processor:2.13.0')
     implementation('io.micronaut:micronaut-http-client:4.7.0')
     implementation('io.micronaut.kafka:micronaut-kafka:5.7.0')
     implementation('io.micronaut.kafka:micronaut-kafka-streams:5.7.0')
