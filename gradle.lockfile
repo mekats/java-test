@@ -1,8 +1,8 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-ch.qos.logback:logback-classic:1.5.16=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
-ch.qos.logback:logback-core:1.5.16=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
+ch.qos.logback:logback-classic:1.5.17=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
+ch.qos.logback:logback-core:1.5.17=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
 com.amazonaws:aws-java-sdk-bom:1.12.477=testResourcesClasspath
 com.amazonaws:aws-java-sdk-bom:1.12.580=annotationProcessor,compileClasspath,developmentOnly,developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testAnnotationProcessor,testCompileClasspath,testResourcesService,testRuntimeClasspath
 com.azure:azure-sdk-bom:1.2.12=testResourcesClasspath
@@ -458,7 +458,8 @@ org.reactivestreams:reactive-streams:1.0.4=annotationProcessor,compileClasspath,
 org.rnorth.duct-tape:duct-tape:1.0.8=compileClasspath,developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testCompileClasspath,testResourcesService,testRuntimeClasspath
 org.rocksdb:rocksdbjni:7.9.2=compileClasspath,developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testCompileClasspath,testRuntimeClasspath
 org.slf4j:slf4j-api:1.7.36=testResourcesClasspath
-org.slf4j:slf4j-api:2.0.16=annotationProcessor,compileClasspath,developmentOnly,developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testCompileClasspath,testRuntimeClasspath
+org.slf4j:slf4j-api:2.0.16=annotationProcessor,compileClasspath,developmentOnly,testCompileClasspath
+org.slf4j:slf4j-api:2.0.17=developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testRuntimeClasspath
 org.slf4j:slf4j-api:2.0.9=testAnnotationProcessor,testResourcesService
 org.spockframework:spock-bom:2.1-groovy-3.0=testResourcesClasspath
 org.spockframework:spock-bom:2.3-groovy-4.0=annotationProcessor,compileClasspath,developmentOnly,developmentRuntimeClasspath,nativeImageClasspath,nativeImageTestClasspath,runtimeClasspath,testAnnotationProcessor,testCompileClasspath,testResourcesService,testRuntimeClasspath
