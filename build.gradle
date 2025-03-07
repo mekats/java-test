@@ -30,7 +30,7 @@ dependencies {
 
     runtimeOnly('org.yaml:snakeyaml:2.4')
     implementation('org.apache.commons:commons-compress:1.27.1')
-    implementation('io.micronaut.testresources:micronaut-test-resources-testcontainers:2.7.3')
+    implementation('io.micronaut.testresources:micronaut-test-resources-testcontainers:2.8.0')
 
     testImplementation('com.sun.xml.ws:jaxws-rt:4.0.3')
     testImplementation('org.glassfish.jaxb:jaxb-runtime:4.0.5')
